@@ -1,0 +1,122 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e57]: Create a user profile card with an avatar, name, role, and a follow button
+            - img [ref=e60]
+          - generic [ref=e63]:
+            - img [ref=e66]
+            - generic [ref=e71]:
+              - paragraph [ref=e73]: This is a static response. You can place an Anthropic API key in the .env file to use the Anthropic API for component generation. Let me create an App.jsx file to display the component.
+              - generic [ref=e76]: Creating App.jsx
+              - separator [ref=e77]
+              - paragraph [ref=e79]: I'll create a Card component for you.
+              - generic [ref=e82]: Creating Card.jsx
+              - separator [ref=e83]
+              - paragraph [ref=e85]: Now let me enhance the component with better styling.
+              - generic [ref=e88]: Editing Card.jsx
+              - separator [ref=e89]
+              - generic [ref=e90]:
+                - paragraph [ref=e91]: "Perfect! I've created:"
+                - list [ref=e97]:
+                  - listitem [ref=e98]:
+                    - strong [ref=e99]: Card.jsx
+                    - text: "- A fully-featured card component"
+                  - listitem [ref=e100]:
+                    - strong [ref=e101]: App.jsx
+                    - text: "- The main app file that displays the component"
+                - paragraph [ref=e102]: The component is now ready to use. You can see the preview on the right side of the screen.
+        - generic [ref=e20]:
+          - textbox "Describe the React component you want to create..." [ref=e21]
+          - button [disabled] [ref=e22]:
+            - img [ref=e23]
+    - separator [ref=e26]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - tablist [ref=e31]:
+          - tab "Preview" [ref=e32]
+          - tab "Code" [selected] [ref=e33]
+        - generic [ref=e34]:
+          - button "Sign In" [ref=e35]
+          - button "Sign Up" [ref=e36]
+      - generic [ref=e103]:
+        - generic [ref=e109]:
+          - generic [ref=e111] [cursor=pointer]:
+            - img [ref=e440]
+            - img [ref=e442]
+            - generic [ref=e116]: components
+          - generic [ref=e127] [cursor=pointer]:
+            - img [ref=e128]
+            - generic [ref=e133]: App.jsx
+        - separator [ref=e134]
+        - code [ref=e139]:
+          - generic [ref=e140]:
+            - generic [ref=e142]:
+              - generic [ref=e145]: "1"
+              - generic [ref=e149]: "2"
+              - generic [ref=e150]:
+                - generic [ref=e151] [cursor=pointer]: 
+                - generic [ref=e152]: "3"
+              - generic [ref=e154]:
+                - generic [ref=e155] [cursor=pointer]: 
+                - generic [ref=e156]: "4"
+              - generic [ref=e157]:
+                - generic [ref=e158] [cursor=pointer]: 
+                - generic [ref=e159]: "5"
+              - generic [ref=e164]:
+                - generic [ref=e165] [cursor=pointer]: 
+                - generic [ref=e166]: "6"
+              - generic [ref=e168]:
+                - generic [ref=e169] [cursor=pointer]: 
+                - generic [ref=e170]: "7"
+              - generic [ref=e172]: "8"
+              - generic [ref=e175]: "9"
+              - generic [ref=e181]:
+                - generic [ref=e182] [cursor=pointer]: 
+                - generic [ref=e183]: "10"
+              - generic [ref=e184]:
+                - generic [ref=e185] [cursor=pointer]: 
+                - generic [ref=e186]: "11"
+              - generic [ref=e196]: "12"
+              - generic [ref=e198]: "13"
+            - generic [ref=e369]:
+              - generic [ref=e371]: import Card from '@/
+              - generic [ref=e373]: components/Card';
+              - generic [ref=e376]: export default function App
+              - generic [ref=e378]: "() {"
+              - generic [ref=e380]: return (
+              - generic [ref=e382]: <div
+              - generic [ref=e384]: className="min-h-screen
+              - generic [ref=e386]: bg-gray-100 flex
+              - generic [ref=e388]: items-center
+              - generic [ref=e390]: justify-center p-8">
+              - generic [ref=e392]: <div className="w-full
+              - generic [ref=e394]: max-w-md">
+              - generic [ref=e396]: <Card
+              - generic [ref=e398]: title="Amazing
+              - generic [ref=e400]: Product"
+              - generic [ref=e402]: description="This
+              - generic [ref=e404]: is a fantastic
+              - generic [ref=e406]: product that will
+              - generic [ref=e408]: change your life.
+              - generic [ref=e410]: Experience the
+              - generic [ref=e412]: difference today!"
+              - generic [ref=e414]: "actions={"
+              - generic [ref=e416]: <button
+              - generic [ref=e418]: className="bg-blu
+              - generic [ref=e420]: e-500 text-white
+              - generic [ref=e422]: px-4 py-2
+              - generic [ref=e424]: rounded
+              - generic [ref=e426]: hover:bg-blue-600
+              - generic [ref=e430]: transition-colors
+              - generic [ref=e432]: "\">"
+              - generic [ref=e434]: Learn More
+              - generic [ref=e436]: </button>
+            - textbox "Editor content" [ref=e438]
+  - alert [ref=e47]
+  - generic [ref=e439]:
+    - alert
+    - alert
