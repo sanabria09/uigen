@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 import {
   ResizableHandle,
   ResizablePanel,
@@ -74,13 +75,16 @@ export function MainContent({ user, project }: MainContentProps) {
                   <HeaderActions user={user} projectId={project?.id} />
                 </div>
 
-                {/* Content Area */}
-                <div className="flex-1 overflow-hidden bg-neutral-50">
-                  {activeView === "preview" ? (
-                    <div className="h-full bg-white">
-                      <PreviewFrame />
-                    </div>
-                  ) : (
+                {/* Content Area — both panels stay mounted so the preview iframe
+                    persists its state across tab switches */}
+                <div className="flex-1 overflow-hidden bg-neutral-50 relative">
+                  {/* Preview panel */}
+                  <div className={cn("absolute inset-0 bg-white", activeView !== "preview" && "hidden")}>
+                    <PreviewFrame />
+                  </div>
+
+                  {/* Code panel */}
+                  <div className={cn("absolute inset-0", activeView !== "code" && "hidden")}>
                     <ResizablePanelGroup
                       direction="horizontal"
                       className="h-full"
@@ -105,7 +109,7 @@ export function MainContent({ user, project }: MainContentProps) {
                         </div>
                       </ResizablePanel>
                     </ResizablePanelGroup>
-                  )}
+                  </div>
                 </div>
               </div>
             </ResizablePanel>
